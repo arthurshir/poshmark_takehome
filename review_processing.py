@@ -36,7 +36,7 @@ class Review:
     self.strength = 0
 
   # Note: Replace this implementation with some kind of preprocessing or optimization
-  #   - Performance: O((|text| + |word|) * |list_of_words|)
+  #   - Performance: O(|reviews| * |review| * |list_of_words|)
   def classify(self):
     self.is_regular = any(word in self.text for word in regulars_words)
     self.is_positive = any(word in self.text for word in positive_words)
