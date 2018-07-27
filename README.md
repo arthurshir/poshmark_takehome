@@ -35,9 +35,9 @@ Get highlights
 ## Overall Highlights Strategy
 
 Algorithm:
-1. Classify each review (Can have multiple classes). [Performance: O(n^)]
-2. Calculate review highlight strength. [Performance: O(n^2)]
-3. Return sorted reviews. [Performance: O(nlogn)]
+1. Classify each review (Can have multiple classes). [Time Complexity: O(|reviews| * |review| * |list_of_words|)]
+2. Calculate review highlight strength. [Time Complexity: O(n^2)]
+3. Return sorted reviews. [Time Complexity: O(nlogn)]
 
 
 ### 1. Use phrase search to classify reviews:
